@@ -7,21 +7,17 @@ const Loader = () => {
       <div className="loader-content">
         <motion.div
           className="loader-logo"
-          initial={{ scale: 0, rotate: 0 }}
-          animate={{ scale: 1, rotate: 360 }}
+          initial={{ scale: 0, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
-          <div className="logo-ring ring-1"></div>
-          <div className="logo-ring ring-2"></div>
-          <div className="logo-ring ring-3"></div>
-          <motion.div
-            className="logo-center"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5, duration: 0.5 }}
-          >
-            M
-          </motion.div>
+          <motion.img
+            src="/Logo.png"
+            alt="Logo"
+            className="logo-image"
+            animate={{ rotate: 360 }}
+            transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+          />
         </motion.div>
         
         <motion.div
