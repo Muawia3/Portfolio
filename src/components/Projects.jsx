@@ -85,7 +85,12 @@ const Projects = () => {
               whileHover={{ y: -10 }}
             >
               <div className="project-image">
-                <img src={project.image} alt={project.title} />
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  loading="lazy"
+                  decoding="async"
+                />
                 <div className="project-overlay">
                   <a
                     href={project.github}

@@ -4,7 +4,7 @@ export const projectsData = [
     title: 'E-Commerce Platform',
     description:
       'Full-stack e-commerce solution with payment integration, product management, and admin dashboard. Features include real-time inventory tracking and order management system.',
-    image: 'https://images.unsplash.com/photo-1460925895917-adf4e565db18?w=500&h=300&fit=crop',
+    image: 'https://images.unsplash.com/photo-1460925895917-adf4e565db18?w=400&h=250&fit=crop&q=50',
     technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Redux'],
     category: 'web',
     github: 'https://github.com',
@@ -16,7 +16,7 @@ export const projectsData = [
     title: 'E-Commerce 2',
     description:
       'Advanced e-commerce platform with modern UI/UX design. Complete shopping cart functionality with product filtering and user dashboard.',
-    image: 'https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=500&h=300&fit=crop',
+    image: 'https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=400&h=250&fit=crop&q=50',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
     category: 'web',
     github: 'https://github.com/Muawia3',
@@ -28,7 +28,7 @@ export const projectsData = [
     title: 'Todo List Application',
     description:
       'Smart task management application with real-time synchronization. Helps you organize daily tasks with priority levels and categories.',
-    image: 'https://images.unsplash.com/photo-1554224311-beee415c201f?w=500&h=300&fit=crop',
+    image: 'https://images.unsplash.com/photo-1554224311-beee415c201f?w=400&h=250&fit=crop&q=50',
     technologies: ['Firebase', 'React', 'Tailwind CSS'],
     category: 'web',
     github: 'https://github.com/Muawia3',
@@ -40,7 +40,7 @@ export const projectsData = [
     title: 'Weather Application',
     description:
       'Real-time weather forecasting app with location-based data and beautiful UI. Get accurate weather information for any location worldwide.',
-    image: 'https://images.unsplash.com/photo-1559627615-cd4628902d4a?w=500&h=300&fit=crop',
+    image: 'https://images.unsplash.com/photo-1559627615-cd4628902d4a?w=400&h=250&fit=crop&q=50',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Weather API'],
     category: 'web',
     github: 'https://github.com/Muawia3',
@@ -52,7 +52,7 @@ export const projectsData = [
     title: 'Firebase Project',
     description:
       'Full-featured application built with Firebase backend. Demonstrates cloud database functionality with authentication and real-time updates.',
-    image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop',
+    image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=250&fit=crop&q=50',
     technologies: ['Firebase', 'Firestore', 'Authentication', 'Cloud Functions'],
     category: 'web',
     github: 'https://github.com/Muawia3',
@@ -64,7 +64,7 @@ export const projectsData = [
     title: 'Task Management Application',
     description:
       'Collaborative task management tool with real-time updates, team features, and productivity analytics. Helps teams organize and track projects efficiently.',
-    image: 'https://images.unsplash.com/photo-1533519227268-7f4ee4991e81?w=500&h=300&fit=crop',
+    image: 'https://images.unsplash.com/photo-1533519227268-7f4ee4991e81?w=400&h=250&fit=crop&q=50',
     technologies: ['React', 'Firebase', 'Tailwind CSS', 'Redux', 'Socket.io'],
     category: 'web',
     github: 'https://github.com',
@@ -76,7 +76,7 @@ export const projectsData = [
     title: 'AI Chat Assistant',
     description:
       'Intelligent chatbot powered by GPT integration with natural language processing. Supports multiple languages and provides context-aware responses with conversation history.',
-    image: 'https://images.unsplash.com/photo-1677442d019cecf120d2cb007f568385?w=500&h=300&fit=crop',
+    image: 'https://images.unsplash.com/photo-1677442d019cecf120d2cb007f568385?w=400&h=250&fit=crop&q=50',
     technologies: ['React', 'OpenAI API', 'Node.js', 'MongoDB', 'TailwindCSS'],
     category: 'ai',
     github: 'https://github.com',
@@ -88,7 +88,7 @@ export const projectsData = [
     title: 'Social Media Dashboard',
     description:
       'Analytics and management dashboard for social media accounts. Aggregates data from multiple platforms and provides insights on engagement, reach, and follower growth.',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop&q=50',
     technologies: ['React', 'Chart.js', 'Axios', 'Express', 'PostgreSQL'],
     category: 'web',
     github: 'https://github.com',
@@ -100,7 +100,7 @@ export const projectsData = [
     title: 'Image Recognition System',
     description:
       'ML-powered application for image classification and object detection. Uses TensorFlow for accurate predictions with support for custom model training.',
-    image: 'https://images.unsplash.com/photo-1535378917455-5a32e3b84b02?w=500&h=300&fit=crop',
+    image: 'https://images.unsplash.com/photo-1535378917455-5a32e3b84b02?w=400&h=250&fit=crop&q=50',
     technologies: ['Python', 'TensorFlow', 'React', 'Flask', 'OpenCV'],
     category: 'ai',
     github: 'https://github.com',
@@ -112,7 +112,7 @@ export const projectsData = [
     title: 'Blog Platform',
     description:
       'Full-featured blogging platform with content management, SEO optimization, and community engagement features. Includes commenting system and author profiles.',
-    image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=500&h=300&fit=crop',
+    image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=400&h=250&fit=crop&q=50',
     technologies: ['Next.js', 'MongoDB', 'Tailwind CSS', 'MDX', 'NextAuth'],
     category: 'web',
     github: 'https://github.com',
@@ -124,7 +124,7 @@ export const projectsData = [
     title: 'Data Visualization Dashboard',
     description:
       'Interactive dashboard with advanced data visualization tools. Provides real-time analytics and customizable reports for business intelligence and decision making.',
-    image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop',
+    image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=250&fit=crop&q=50',
     technologies: ['React', 'D3.js', 'Recharts', 'Node.js', 'PostgreSQL'],
     category: 'web',
     github: 'https://github.com',
@@ -136,7 +136,7 @@ export const projectsData = [
     title: 'Mobile Fitness Tracker',
     description:
       'Cross-platform fitness application with workout tracking, nutrition logging, and progress analytics. Integrates with popular fitness wearables and health APIs.',
-    image: 'https://images.unsplash.com/photo-1505439773649-8b91fc77e37f?w=500&h=300&fit=crop',
+    image: 'https://images.unsplash.com/photo-1505439773649-8b91fc77e37f?w=400&h=250&fit=crop&q=50',
     technologies: ['React Native', 'Firebase', 'Chart.js', 'Health APIs'],
     category: 'web',
     github: 'https://github.com',
