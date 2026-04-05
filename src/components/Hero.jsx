@@ -83,10 +83,10 @@ const Hero = () => {
             <a href="https://github.com/Muawia3" target="_blank" rel="noopener noreferrer">
               <FaGithub />
             </a>
-            <a href="https://www.linkedin.com/in/ameer-muawia-0a6a6331a/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/ameer-muawia" target="_blank" rel="noopener noreferrer">
               <FaLinkedin />
             </a>
-            <a href="https://www.instagram.com/muawia100?igsh=NWk1cnpqYjZhZTJs" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/muawia_804/" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
             <a href="mailto:amuawia@aup.edu.pk">

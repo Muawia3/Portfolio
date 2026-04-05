@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { projectsData } from '../data/projects';
 import './Projects.css';
 
 const Projects = () => {
@@ -12,74 +13,7 @@ const Projects = () => {
 
   const [filter, setFilter] = useState('all');
 
-  const projects = [
-    {
-      id: 1,
-      title: 'AI-Powered Chat Application',
-      description:
-        'A real-time chat application with AI integration for smart replies and sentiment analysis',
-      image: '/vite.svg',
-      technologies: ['React', 'Node.js', 'TensorFlow', 'Socket.io'],
-      category: 'ai',
-      github: '#',
-      demo: '#',
-    },
-    {
-      id: 2,
-      title: 'E-Commerce Platform',
-      description:
-        'Full-stack e-commerce solution with payment integration and admin dashboard',
-      image: '/vite.svg',
-      technologies: ['React', 'MongoDB', 'Express', 'Stripe'],
-      category: 'web',
-      github: '#',
-      demo: '#',
-    },
-    {
-      id: 3,
-      title: 'Task Management System',
-      description:
-        'Collaborative task management tool with real-time updates and team features',
-      image: '/vite.svg',
-      technologies: ['React', 'Firebase', 'Tailwind CSS'],
-      category: 'web',
-      github: '#',
-      demo: '#',
-    },
-    {
-      id: 4,
-      title: 'Image Recognition App',
-      description:
-        'ML-powered image classification and object detection application',
-      image: '/vite.svg',
-      technologies: ['Python', 'TensorFlow', 'React', 'Flask'],
-      category: 'ai',
-      github: '#',
-      demo: '#',
-    },
-    {
-      id: 5,
-      title: 'Weather Dashboard',
-      description:
-        'Beautiful weather application with forecast and location-based data',
-      image: '/vite.svg',
-      technologies: ['React', 'API Integration', 'CSS3'],
-      category: 'web',
-      github: '#',
-      demo: '#',
-    },
-    {
-      id: 6,
-      title: 'Portfolio Generator',
-      description:
-        'AI-assisted portfolio builder that creates professional websites automatically',
-      image: '/vite.svg',
-      technologies: ['React', 'OpenAI', 'TypeScript'],
-      category: 'ai',
-      github: '#',
-      demo: '#',
-    },
-  ];
+  const projects = projectsData;
 
   const filteredProjects =
     filter === 'all'

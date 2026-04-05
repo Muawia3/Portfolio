@@ -1,6 +1,5 @@
 .projects {
-  min-height: 100vh;
-  padding: 100px 20px;
+  padding: 80px 20px;
   background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
 }
 

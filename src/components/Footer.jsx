@@ -17,8 +17,8 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: <FaGithub />, url: 'https://github.com/Muawia3', label: 'GitHub' },
-    { icon: <FaLinkedin />, url: 'https://www.linkedin.com/in/ameer-muawia-0a6a6331a/', label: 'LinkedIn' },
-    { icon: <FaInstagram />, url: 'https://www.instagram.com/muawia100?igsh=NWk1cnpqYjZhZTJs', label: 'Instagram' },
+    { icon: <FaLinkedin />, url: 'https://www.linkedin.com/in/ameer-muawia', label: 'LinkedIn' },
+    { icon: <FaInstagram />, url: 'https://www.instagram.com/muawia_804/', label: 'Instagram' },
     { icon: <FaEnvelope />, url: 'mailto:amuawia@aup.edu.pk', label: 'Email' },
   ];
 

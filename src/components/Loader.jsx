@@ -11,13 +11,15 @@ const Loader = () => {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
-          <motion.img
-            src="/Logo.png"
-            alt="Logo"
-            className="logo-image"
-            animate={{ rotate: 360 }}
-            transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-          />
+          <div className="spinner"></div>
+          <div className="spinner-inner"></div>
+          <div className="spinner-center">
+            <motion.div
+              className="pulse-circle"
+              animate={{ scale: [1, 1.2, 1] }}
+              transition={{ duration: 2, repeat: Infinity }}
+            ></motion.div>
+          </div>
         </motion.div>
         
         <motion.div

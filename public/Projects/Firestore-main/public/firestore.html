@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Realtime Firestore Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .form-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+        }
+
+        input,
+        button {
+            padding: 10px;
+            margin: 5px 0;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        input {
+            width: 95%;
+        }
+
+        button {
+            background: #007BFF;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        .user-card {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        .delete-btn {
+            background: crimson;
+            width: 100px;
+            transition: background-color 0.3s;
+        }
+
+        .delete-btn:hover {
+            background-color: rgb(142, 0, 28);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🔥 Realtime Firestore Demo (Compat)</h1>
+
+    <!-- Form -->
+    <div class="form-container">
+        <input type="text" id="name" placeholder="Enter name">
+        <input type="number" id="age" placeholder="Enter age">
+        <button onclick="addUser()">Add User</button>
+    </div>
+
+    <!-- Users List -->
+    <h2>Users List (Auto Updates)</h2>
+    <div id="usersList"></div>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/12.1.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore-compat.js"></script>
+
+    <script>
+        // ✅ Replace with your Firebase config
+        const firebaseConfig = {
+  apiKey: "AIzaSyCsa7Unxm8i9nr_ZO8uGZ7QG5AbsM81VE4",
+  authDomain: "firestore-384ae.firebaseapp.com",
+  projectId: "firestore-384ae",
+  storageBucket: "firestore-384ae.firebasestorage.app",
+  messagingSenderId: "1062766944757",
+  appId: "1:1062766944757:web:ec9d0d7370b76049af40bc"
+};
+
+        // Init Firebase + Firestore
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+
+        // Add user
+        async function addUser() {
+            const name = document.getElementById("name").value;
+            const age = document.getElementById("age").value;
+
+            if (!name || !age) {
+                alert("Please enter name and age!");
+                return;
+            }
+
+
+
+
+            await db.collection("users").add({ name, age: Number(age) });
+
+
+
+
+
+
+
+            document.getElementById("name").value = "";
+            document.getElementById("age").value = "";
+        }
+
+        // Delete user
+        async function deleteUser(id) {
+            await db.collection("users").doc(id).delete();
+        }
+
+        // Realtime listener
+        const usersList = document.getElementById("usersList");
+        db.collection("users").onSnapshot((snapshot) => {
+            usersList.innerHTML = "";
+            snapshot.forEach((doc) => {
+                const data = doc.data();
+                const userDiv = document.createElement("div");
+                userDiv.className = "user-card";
+                userDiv.innerHTML = `
+          <span>Name: ${data.name} | Age: ${data.age}</span>
+          <button class="delete-btn" onclick="deleteUser('${doc.id}')">Delete</button>
+        `;
+                usersList.appendChild(userDiv);
+            });
+        });
+    </script>
+</body>
+
+</html>
