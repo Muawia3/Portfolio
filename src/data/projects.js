@@ -13,6 +13,54 @@ export const projectsData = [
   },
   {
     id: 2,
+    title: 'E-Commerce 2',
+    description:
+      'Advanced e-commerce platform with modern UI/UX design. Complete shopping cart functionality with product filtering and user dashboard.',
+    image: 'https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=500&h=300&fit=crop',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
+    category: 'web',
+    github: 'https://github.com/Muawia3',
+    demo: './projects/E-Commerce 2/code.html',
+    features: ['Shopping Cart', 'Product Filtering', 'User Profiles', 'Responsive Design'],
+  },
+  {
+    id: 3,
+    title: 'Todo List Application',
+    description:
+      'Smart task management application with real-time synchronization. Helps you organize daily tasks with priority levels and categories.',
+    image: 'https://images.unsplash.com/photo-1554224311-beee415c201f?w=500&h=300&fit=crop',
+    technologies: ['Firebase', 'React', 'Tailwind CSS'],
+    category: 'web',
+    github: 'https://github.com/Muawia3',
+    demo: './projects/Todo List/public/index.html',
+    features: ['Task Management', 'Real-time Sync', 'Priority Levels', 'Cloud Storage'],
+  },
+  {
+    id: 4,
+    title: 'Weather Application',
+    description:
+      'Real-time weather forecasting app with location-based data and beautiful UI. Get accurate weather information for any location worldwide.',
+    image: 'https://images.unsplash.com/photo-1559627615-cd4628902d4a?w=500&h=300&fit=crop',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Weather API'],
+    category: 'web',
+    github: 'https://github.com/Muawia3',
+    demo: './projects/Weather/index.html',
+    features: ['Real-time Weather', 'Geolocation', 'Forecast Data', 'Responsive Design'],
+  },
+  {
+    id: 5,
+    title: 'Firebase Project',
+    description:
+      'Full-featured application built with Firebase backend. Demonstrates cloud database functionality with authentication and real-time updates.',
+    image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop',
+    technologies: ['Firebase', 'Firestore', 'Authentication', 'Cloud Functions'],
+    category: 'web',
+    github: 'https://github.com/Muawia3',
+    demo: './projects/Firestore-main/public/index.html',
+    features: ['Cloud Database', 'Authentication', 'Real-time Updates', 'Scalable'],
+  },
+  {
+    id: 6,
     title: 'Task Management Application',
     description:
       'Collaborative task management tool with real-time updates, team features, and productivity analytics. Helps teams organize and track projects efficiently.',
@@ -24,7 +72,7 @@ export const projectsData = [
     features: ['Kanban Board', 'Team Collaboration', 'Analytics', 'Real-time Sync'],
   },
   {
-    id: 3,
+    id: 7,
     title: 'AI Chat Assistant',
     description:
       'Intelligent chatbot powered by GPT integration with natural language processing. Supports multiple languages and provides context-aware responses with conversation history.',
@@ -36,7 +84,7 @@ export const projectsData = [
     features: ['GPT Integration', 'Multi-language', 'Chat History', 'Real-time Response'],
   },
   {
-    id: 4,
+    id: 8,
     title: 'Social Media Dashboard',
     description:
       'Analytics and management dashboard for social media accounts. Aggregates data from multiple platforms and provides insights on engagement, reach, and follower growth.',
@@ -48,7 +96,7 @@ export const projectsData = [
     features: ['Multi-platform Support', 'Analytics', 'Scheduling', 'Performance Metrics'],
   },
   {
-    id: 5,
+    id: 9,
     title: 'Image Recognition System',
     description:
       'ML-powered application for image classification and object detection. Uses TensorFlow for accurate predictions with support for custom model training.',
@@ -60,19 +108,7 @@ export const projectsData = [
     features: ['Object Detection', 'Image Classification', 'Custom Training', 'Batch Processing'],
   },
   {
-    id: 6,
-    title: 'Weather Application',
-    description:
-      'Beautiful weather app with real-time forecasts, location-based weather data, and interactive maps. Displays detailed weather information with hourly updates.',
-    image: 'https://images.unsplash.com/photo-1559627615-cd4628902d4a?w=500&h=300&fit=crop',
-    technologies: ['React', 'OpenWeather API', 'Mapbox', 'Tailwind CSS', 'Axios'],
-    category: 'web',
-    github: 'https://github.com',
-    demo: 'https://demo.com',
-    features: ['Real-time Weather', 'Geolocation', 'Forecast Data', 'Weather Maps'],
-  },
-  {
-    id: 7,
+    id: 10,
     title: 'Blog Platform',
     description:
       'Full-featured blogging platform with content management, SEO optimization, and community engagement features. Includes commenting system and author profiles.',
@@ -84,7 +120,7 @@ export const projectsData = [
     features: ['Content Management', 'SEO Optimized', 'Comments System', 'User Profiles'],
   },
   {
-    id: 8,
+    id: 11,
     title: 'Data Visualization Dashboard',
     description:
       'Interactive dashboard with advanced data visualization tools. Provides real-time analytics and customizable reports for business intelligence and decision making.',
@@ -96,7 +132,7 @@ export const projectsData = [
     features: ['Interactive Charts', 'Real-time Data', 'Custom Reports', 'Export Options'],
   },
   {
-    id: 9,
+    id: 12,
     title: 'Mobile Fitness Tracker',
     description:
       'Cross-platform fitness application with workout tracking, nutrition logging, and progress analytics. Integrates with popular fitness wearables and health APIs.',
