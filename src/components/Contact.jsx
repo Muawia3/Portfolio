@@ -1,7 +1,6 @@
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import emailjs from 'emailjs-com';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaPaperPlane } from 'react-icons/fa';
 import './Contact.css';
 
@@ -33,24 +32,38 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      // Replace with your EmailJS credentials
-      // Get them from: https://www.emailjs.com/
-      await emailjs.sendForm(
-        'YOUR_SERVICE_ID', // Replace with your service ID
-        'YOUR_TEMPLATE_ID', // Replace with your template ID
-        formRef.current,
-        'YOUR_PUBLIC_KEY' // Replace with your public key
-      );
-
-      setStatus('success');
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: '',
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: 'e086bd60-8456-4668-9b53-a1d78a20e13e',
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        }),
       });
-      setTimeout(() => setStatus(''), 5000);
+
+      const result = await response.json();
+
+      if (result.success) {
+        setStatus('success');
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: '',
+        });
+        setTimeout(() => setStatus(''), 5000);
+      } else {
+        setStatus('error');
+        setTimeout(() => setStatus(''), 5000);
+      }
     } catch (error) {
+      console.error('Error:', error);
       setStatus('error');
       setTimeout(() => setStatus(''), 5000);
     } finally {

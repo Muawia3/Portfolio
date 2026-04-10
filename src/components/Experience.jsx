@@ -19,6 +19,22 @@ const Experience = () => {
       icon: <FaGraduationCap />,
     },
     {
+      degree: 'Web Development Training',
+      institution: 'Saylani Mass IT Training Center Peshawar',
+      period: '2024 - 2026',
+      description:
+        'Comprehensive training in modern web development including HTML, CSS, JavaScript, React, Node.js, and full-stack development',
+      icon: <FaGraduationCap />,
+    },
+    {
+      degree: 'AI/ML/DL Training Program',
+      institution: 'NAVTTC (Arfa Karim Technology Incubator)',
+      period: '2026-Present',
+      description:
+        'Advanced training in Machine Learning, Deep Learning, and Artificial Intelligence with hands-on projects and real-world applications',
+      icon: <FaGraduationCap />,
+    },
+    {
       degree: 'Intermediate (Pre-Medical)',
       institution: 'Govt Superior Science College',
       period: '2021 - 2023',
@@ -30,6 +46,14 @@ const Experience = () => {
 
   const experience = [
     {
+      title: 'TEDx Organizer',
+      company: 'TEDx University of Agriculture Peshawar',
+      period: '2026 - Present',
+      description:
+        'Organizing TEDx events at University of Agriculture Peshawar, curating inspiring talks on technology, innovation, and entrepreneurship',
+      icon: <FaBriefcase />,
+    },
+    {
       title: 'Vice President',
       company: 'Farabi Science Society - University of Agriculture Peshawar',
       period: '2023 - Present',
@@ -38,11 +62,19 @@ const Experience = () => {
       icon: <FaBriefcase />,
     },
     {
-      title: 'Front-End Developer',
-      company: 'Freelance',
-      period: '2023 - Present',
+      title: 'Campus Leader',
+      company: 'APEXA - University of Agriculture Peshawar',
+      period: '2026 - Present',
       description:
-        'Building responsive web applications using React, JavaScript, and modern CSS frameworks',
+        'Campus leader for APEXA - an AI-powered mind power and future-self enablement platform. Empowering students and dreamers through practical mental training techniques. Mission: engaging, educating, and empowering dreamers to achieve their life goals through personalized guidance and behavior alignment.',
+      icon: <FaBriefcase />,
+    },
+    {
+      title: 'General Secretary',
+      company: 'Literary and Cultural Society - University of Agriculture Peshawar',
+      period: '2026 - Present',
+      description:
+        'General Secretary of Literary and Cultural Society, leading cultural initiatives, organizing literary events, and promoting arts and literature on campus',
       icon: <FaBriefcase />,
     },
   ];
